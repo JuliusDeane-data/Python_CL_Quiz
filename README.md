@@ -19,16 +19,8 @@ These steps will set up the quiz and database on your system.
 
 - Python 3.6+
 - PostgreSQL installed and available via `psql` command
-- Git
 
-### 2. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/python-quiz-cli.git
-cd python-quiz-cli
-```
-
-### 3. Run the Setup
+### 2. Run the Setup
 
 Run the setup script:
 
@@ -43,6 +35,20 @@ The setup script will:
 - Create the database `python_quiz`
 - Import the data from `data/quiz_dump.sql`
 - Create a `config.py` file in `game_files/` with your credentials
+
+⚠️⚠️⚠️
+
+If PostgreSQL is installed on your system, 
+but the setup.py can't find it, try this on Windows:
+
+1. Find your PostgreSQL `bin` directory (e.g. `C:\Program Files\PostgreSQL\15\bin`)
+2. Add that folder to your system PATH:
+   - Open *System Properties* → *Environment Variables*
+   - Under *System variables*, select `Path` → *Edit* → *New*
+   - Paste the full path to the `bin` directory
+3. Restart your terminal and start the setup.py again
+
+⚠️⚠️⚠️
 
 ### 4. Start the Quiz
 

@@ -2,3 +2,5 @@
 /env
 # login data for sql
 config.py
+# cache
+/game_files/__pycache__
